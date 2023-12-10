@@ -1,0 +1,115 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(-45deg, #c0a49b, #85797d, #111213, #627d77);
+  background-size: 400% 400%;
+  animation: gradient 40s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.moving-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('trollface.jpg'); /* Pfad zu deinem Bild */
+  background-size: cover;
+  animation: flyAround 10s linear infinite;
+}
+
+@keyframes flyAround {
+  0% {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    transform: rotate(0deg);
+  }
+  25% {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    transform: rotate(90deg);
+  }
+  50% {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    transform: rotate(180deg);
+  }
+  75% {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    transform: rotate(270deg);
+  }
+  100% {
+    top: calc(random() * 100%);
+    left: calc(random() * 100%);
+    transform: rotate(360deg);
+  }
+}
+
+.meme_generator {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.meme_generator img {
+  height: 430px;
+  object-fit: cover;
+  border-style: solid;
+  margin-top: 40px;
+}
+
+.meme_generator .generate_meme_btn {
+  padding: 8px 20px;
+  border: none;
+  border-top: 4px solid #222;
+  border-bottom: 4px solid #222;
+  margin: 24px 0;
+  font-size: 20px;
+  color: #000000;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.meme_generator .meme_title {
+  color: white;
+}
+
+.meme_generator .generate_meme_btn:hover {
+  padding: 8px 36px;
+  border-top: 8px solid #222;
+  border-bottom: 8px solid #222;
+  letter-spacing: 3px;
+}
+
+.meme_generator .meme_author {
+  margin: 8px;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 100px;
+  background-color: green;
+}
+
+.custom-navbar {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+}
