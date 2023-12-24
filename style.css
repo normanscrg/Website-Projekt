@@ -41,11 +41,7 @@ h1 {
 
 }
 
-.info-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+
 
 
 .header-content {
@@ -68,24 +64,41 @@ h1 {
 }
 
 
+/* Füge die vorherigen Stile hier ein */
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .left-rectangle,
 .right-rectangle,
-.middle-rectangle {
-  height: 500px;
-  width: 300px;
-  background-color: rgba(40, 29, 29, 0.295);
-  border: 1px solid #686565;
-  border-radius: 10px;
-  z-index: 1;
-}
+.middle-rectangle,
 .info-box2 {
-  height: 500px;
-  width: 1000px;
+  height: 60vh; /* 60% der Viewport Höhe */
+  width: 30%;   /* 30% der Breite des übergeordneten Containers (carousel-item) */
   background-color: rgba(40, 29, 29, 0.295);
   border: 1px solid #686565;
   border-radius: 10px;
-  z-index: 1;
+  margin: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-rectangle, .right-rectangle, .middle-rectangle, .info-box2 {
+    width: 100%;
+    height: 40vh; /* Ändere die Höhe für kleinere Bildschirme */
+  }
+}
+
+/* Weitere Stile... */
+
 .searchingbar {
   width: 50%;
   height: 70px;
