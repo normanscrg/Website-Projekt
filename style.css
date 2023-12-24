@@ -1,6 +1,11 @@
+
+
 body {
   height: 100%;
   width: 100%;
+}
+body, ul {
+  margin: 0;
 }
 
 h1 {
@@ -8,6 +13,19 @@ h1 {
 }
 .normalbackground {
   background-image: url("images/background3.jpeg");
+  height: 100vh;
+}
+
+
+.about {
+  background-image: url("images/background_about.jpeg");
+  background-repeat: no-repeat;
+  height: 1000px;
+  
+}
+
+.carousel {
+  margin-bottom: 0;
 }
 
 .carousel-caption {
@@ -24,6 +42,7 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin-bottom: 0;
 }
 .carousel-control-prev, .carousel-control-next {
 
@@ -48,23 +67,47 @@ h1 {
   background-color: #ff6a00c2;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  height: 10%;
+  
+  border-color: #000000;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  padding: 10px; /* Gleichmäßiger Innenabstand für alle Seiten */
 }
+
+.header-content h2 {
+  font-size: 18px; /* Passe die Schriftgröße nach Bedarf an */
+  max-width: 100%; /* Stellt sicher, dass die Überschrift nicht über die Breite des Containers hinausgeht */
+  overflow: hidden; /* Verhindert, dass der Text über den Bereich hinausgeht */
+  text-overflow: ellipsis; /* Fügt "..." hinzu, wenn der Text zu lang ist */
+  white-space: normal; /* Erlaubt Zeilenumbruch, wenn der Text zu lang ist */
+  word-wrap: break-word; /* Erlaubt Wortumbruch, wenn der Text zu lang ist */
+}
+
 
 .rectangle-content {
   margin-top: 20px;
-  color: rgb(157, 144, 144);
-  font-size: 16px;
+  color: rgb(215, 206, 206);
   text-align: center;
+  font-size: small;
   flex-direction: column;
   justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 2;
+  font-size: 16px;
+  overflow: hidden; /* Hinzugefügtes CSS-Attribut */
 }
 
 
-/* Füge die vorherigen Stile hier ein */
+
+
+
+
 
 .info-box {
   display: flex;
@@ -77,11 +120,22 @@ h1 {
 .middle-rectangle,
 .info-box2 {
   height: 60vh; /* 60% der Viewport Höhe */
-  width: 30%;   /* 30% der Breite des übergeordneten Containers (carousel-item) */
+  width: 60%;   /* 30% der Breite des übergeordneten Containers (carousel-item) */
   background-color: rgba(40, 29, 29, 0.295);
-  border: 1px solid #686565;
+  border: 1px solid #232222;
+  border-width: 2px;
   border-radius: 10px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+#info-box2_header h2{
+  font-size: 24px;
+}
+
+#info-box2_content {
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 768px) {
@@ -96,8 +150,33 @@ h1 {
     height: 40vh; /* Ändere die Höhe für kleinere Bildschirme */
   }
 }
+.content {
+  background-image: url("images/background_categories.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  
+}
 
-/* Weitere Stile... */
+.categories {
+  height: 500px;
+  color: white;
+}
+
+.categories_header{
+  margin-top: 100px;
+}
+.card {
+  height: 130px;
+  overflow: hidden;
+  border: none;
+  border-radius: 15px
+}
+
+.imagename {
+  font-size: 14px;
+  font-weight: bold
+}
 
 .searchingbar {
   width: 50%;
