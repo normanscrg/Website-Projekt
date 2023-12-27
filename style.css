@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 /* CSS-Regeln für den Body und ul */
@@ -32,14 +33,15 @@ h1 {
   background-image: url("images/background3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 100%;
+  min-height: 100vh;
 }
 
 /* CSS-Regeln für den Abschnitt mit der Klasse about */
 .about {
   background-image: url("images/background_about.jpeg");
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 100vh;
   color: white;
   justify-content: center;
   align-items: center;
@@ -52,8 +54,9 @@ h1 {
 
 #reddit_api,
 #giphy_api {
-  padding-top: 40px;
+
   font-size: 30px;
+  border-color: #fafafa;
   
 }
 #reddit_api_content,
@@ -76,6 +79,14 @@ h1 {
   color: #fff; /* Optional: Textfarbe anpassen */
 }
 
+
+.bg-img-1{
+  background-image: url("images/background1.jpeg");
+}
+.bg-img-2{
+  background-image: url("images/background2.jpeg");
+}
+
 /* CSS-Regeln für die Carousel-Elemente */
 .carousel-item {
   display: flex;
@@ -83,7 +94,11 @@ h1 {
   justify-content: center;
   height: 100vh;
   margin-bottom: 0;
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire container with the background image */
+  background-attachment: fixed;
 }
+
 
 /* CSS-Regeln für die Carousel-Steuerung */
 .carousel-control-prev,
@@ -172,17 +187,25 @@ h1 {
 }
 
 /* Media Query für Bildschirme mit einer Breite von 768px oder kleiner */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .info-box {
     flex-direction: column;
     align-items: center;
     text-align: center;
+   
+  }
+  .info-box2 {
+    height: 120vh;
   }
 
   .left-rectangle, .right-rectangle, .middle-rectangle, .info-box2 {
     width: 100%;
     height: 40vh;
   }
+  .carousel-item {
+    height: 200vh; /* Passe die Höhe nach Bedarf an */
+  }
+
 }
 
 /* CSS-Regeln für den Abschnitt mit der Klasse content */
@@ -221,7 +244,7 @@ h1 {
 
 /* CSS-Regeln für die Suchleiste */
 .searchingbar {
-  width: 50%;
+ /* Breite auf 100% setzen */
   height: 70px;
   border-radius: 10px;
   border-color: #00000069;
@@ -266,8 +289,9 @@ h1 {
   border-color: black;
 }
 
+
 /* CSS-Regeln für den Abschnitt mit der Klasse pic */
-pic {
+.pic {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,7 +331,7 @@ pic {
 .meme_generator {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 /* CSS-Regeln für Bilder im Meme-Generator */
@@ -481,4 +505,23 @@ footer {
   left: 100%;
   visibility: visible;
 }
+
+
+
+footer{
+  border-top: #000000;
+  border-width: 2px;
+  background-color: #ef6503;
+  padding: 0;
+
+}
+.footer_img {
+height: 100px;
+width: 100px;
+margin: 0px 30px 0px 30px ;
+border-radius: 20%;
+background-color: #b74c00;
+
+}
+
 
