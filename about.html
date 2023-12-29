@@ -1,113 +1,126 @@
+<!-- HTML Document with Comments -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Metadata for character set, compatibility, viewport, and title -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme-Generator</title>
+    <!-- Link to external stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-
-
+    <!-- Navigation Bar -->
     <nav id="navbar" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">
-            <img class="spacer" src="images/redditlogo.png" 
-            
-           >
-           Home
-          </a></li>
-          <li><a class="nav-link scrollto active" href="about.html">About</a></li>
-          <li><a class="nav-link scrollto" href="giffinder.html">GIF Finder</a></li>
-
-          <li class="dropdown"><a href="#"><span>Memes Genres</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="HistoryMemes.html">History Memes</a></li>
-              <li><a href="GymMemes.html">Gym Memes</a></li>
-              <li><a href="RandomMemes.html">Random Memes</a></li>
-            </ul>
-          </li>
+            <!-- Navigation Items -->
+            <li><a class="nav-link scrollto" href="index.html">
+                <img class="spacer" src="images/redditlogo.png" alt="Reddit-Logo">
+                Home
+            </a></li>
+            <li><a class="nav-link scrollto active" href="about.html">About</a></li>
+            <li><a class="nav-link scrollto" href="giffinder.html">GIF Finder</a></li>
+            <!-- Dropdown for Meme Genres -->
+            <li class="dropdown">
+                <a href="#"><span>Memes Genres</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="HistoryMemes.html">History Memes</a></li>
+                    <li><a href="GymMemes.html">Gym Memes</a></li>
+                    <li><a href="RandomMemes.html">Random Memes</a></li>
+                </ul>
+            </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+    </nav>
 
-  
-      <body>
-        
+    <!-- Main Content -->
+    <body>
+        <div class="about">
+            <div class="text-center headline"> About</div>
+            <!-- Info Boxes for Reddit API and GIPHY API -->
+            <div id="about_content" class="info-box">
+                <!-- Left Rectangle for Reddit API -->
+                <div id="reddit_api" class="left-rectangle">
+                    <div class="header-content">
+                        <h2>Reddit API</h2>
+                    </div>
+                    <div id="reddit_api_content" class="rectangle-content">
+                        <!-- Reddit API Information -->
+                        🎉 Diverse Meme-Kategorien: Von Humor & Comedy bis zu Gaming & Gamer Memes – die API bietet eine breite Palette von Meme-Kategorien.
 
-    <div class="about">
-      <div class="text-center headline"> About</div>
-      <div class="info-box">
-        <div id="reddit_api" class="left-rectangle">
-          <div class="header-content">
-            <h2>Reddit API</h2>
-          </div>
-          <div id="reddit_api_content" class="rectangle-content">
-            🎉 Vielfältige Meme-Kategorien: Von Humor & Comedy über Gaming & Gamer Memes bis hin zu Everyday Situations & Reactions – die API bietet eine breite Palette von Meme-Kategorien, die jeden Geschmack abdecken.
+                        🔎 Leistungsstarke Suche: Durchsucht die riesige Sammlung nach Schlagworten, Themen oder Emotionen.
 
-            🔎 Leistungsstarke Suche: Findet genau das Meme, das gesucht wird, mit der fortschrittlichen Suchfunktion. Durchsucht die riesige Sammlung nach Schlagworten, Themen oder Emotionen.
-            
-            🔄 Aktuelle Trends: Bleibt immer auf dem neuesten Stand mit den aktuellen Trends in der Meme-Welt. Die API stellt sicher, dass sie immer die heißesten und trendigsten Memes in ihren Händen haben.
-            
-            💬 Community-Beiträge: Entdeckt die Kreativität der Meme-Community! Die API ermöglicht es Nutzern, ihre eigenen Memes hochzuladen und mit der Welt zu teilen.
-            
-            https://github.com/D3vd/Meme_Api
-          </div>
-      </div>
-      <div id="giphy_api" class="right-rectangle">
-        <div class="header-content">
-          <h2>GIPHY API </h2>
+                        🔄 Aktuelle Trends: Bleibt immer auf dem neuesten Stand mit den aktuellen Trends in der Meme-Welt.
+
+                        💬 Community-Beiträge: Nutzer können ihre eigenen Memes hochladen und teilen.
+
+                        <br>
+                        GitHub: [Reddit API Repository](https://github.com/D3vd/Meme_Api)
+
+                    </div>
+                </div>
+                <!-- Right Rectangle for GIPHY API -->
+                <div id="giphy_api" class="right-rectangle">
+                    <div class="header-content">
+                        <h2>GIPHY API</h2>
+                    </div>
+                    <div id="giphy_api_content" class="rectangle-content">
+                        <!-- GIPHY API Information -->
+                        Die Giphy API ermöglicht Entwicklern den Zugriff auf eine riesige Sammlung von animierten GIFs für verschiedene Anwendungen.
+
+                        Funktionen und Möglichkeiten:
+
+                        Suche nach GIFs: Sucht nach GIFs basierend auf Stichwörtern, Themen oder Emotionen.
+
+                        Trending GIFs: Zugriff auf die aktuellen Trend-GIFs auf der Giphy-Plattform.
+
+                        Random GIFs: Abrufen von zufälligen GIFs für eine spielerische Integration.
+
+                        GIF-Upload: Benutzer können eigene GIFs hochladen und über die API verwalten.
+
+                        <br>
+                        https://developers.giphy.com/docs/api/
+                    </div>
+                </div>
+            </div>
         </div>
-          <div id="giphy_api_content" class="rectangle-content">
-            Die Giphy API ist eine Schnittstelle, die von Giphy bereitgestellt wird, einem beliebten Online-Dienst für GIFs. Diese API ermöglicht Entwicklern den Zugriff auf eine riesige Sammlung von animierten GIFs für verschiedene Anwendungen, von der Integration in Websites bis hin zur Entwicklung von Anwendungen.
 
-            Funktionen und Möglichkeiten:
-            
-            Suche nach GIFs: Die API ermöglicht es, nach GIFs basierend auf Stichwörtern, Themen oder Emotionen zu suchen.
-            Trending GIFs: Zugriff auf die aktuellen Trend-GIFs auf der Giphy-Plattform.
-            Random GIFs: Abrufen von zufälligen GIFs für eine spielerische Integration.
-            Upload von GIFs: Benutzer können auch eigene GIFs hochladen und über die API verwalten.           </div>
-      </div>
-    </div>
-   
-    </div>
-
-    <div>
-      <footer class="py-3 my-0 border-top border-dark border-3">
-    
-        <ul class="nav justify-content-center border-bottom pt-3 pb-3 mb-3">
-          <div class="d-flex justify-content-between w-100">
-            <!-- Icon links -->
-            <span class="me-auto">
-              <img class="footer_img" src="images/Trollface.png" alt="">
-              <!-- Hier kannst du das Icon oder Symbol einfügen -->
-            </span>
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-          <li class="nav-item"><a href="giffinder.html" class="nav-link px-2 text-muted">GIF Finder</a></li>
-          <li class="nav-item"><a href="HistoryMemes.html" class="nav-link px-2 text-muted">History Memes</a></li>
-          <li class="nav-item"><a href="GymMemes.html" class="nav-link px-2 text-muted">Gym Memes</a></li>
-          <li class="nav-item"><a href="RandomMemes.html" class="nav-link px-2 text-muted">Random Memes</a></li>
-          <span class="ms-auto">
-            <img class="footer_img" src="images/Trollface.png" alt="">
-            <!-- Hier kannst du das Icon oder Symbol einfügen -->
-          </span>
+        <!-- Footer -->
+        <div>
+            <footer class="py-3 my-0 border-top border-dark border-3">
+                <!-- Navigation Bar in Footer -->
+                <ul class="nav justify-content-center border-bottom pt-3 pb-3 mb-3">
+                    <div class="d-flex justify-content-between w-100">
+                        <!-- Icon Left -->
+                        <span class="me-auto">
+                            <img class="footer_img" src="images/Trollface.png" alt="">
+                            <!-- Insert your icon or symbol here -->
+                        </span>
+                        <!-- Navigation Links -->
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+                        <li class="nav-item"><a href="giffinder.html" class="nav-link px-2 text-muted">GIF Finder</a></li>
+                        <li class="nav-item"><a href="HistoryMemes.html" class="nav-link px-2 text-muted">History Memes</a></li>
+                        <li class="nav-item"><a href="GymMemes.html" class="nav-link px-2 text-muted">Gym Memes</a></li>
+                        <li class="nav-item"><a href="RandomMemes.html" class="nav-link px-2 text-muted">Random Memes</a></li>
+                        <!-- Icon Right -->
+                        <span class="ms-auto">
+                            <img class="footer_img" src="images/Trollface.png" alt="">
+                            <!-- Insert your icon or symbol here -->
+                        </span>
+                    </div>
+                    <!-- Text in the Middle -->
+                    <p class="text-center text-muted">© 2023 MEMES, Inc</p>
+                    <!-- Icon Right -->
+                </ul>
+            </footer>
         </div>
-            <!-- Text in der Mitte -->
-            <p class="text-center text-muted">© 2023 MEMES, Inc</p>
-            <!-- Icon rechts -->
-  
-         
-        </ul>
-    
-      </footer>
-    </div> 
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-      </body>
-      </html>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

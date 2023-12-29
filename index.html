@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
+    <!-- Metadaten für Zeichensatz, Kompatibilität, Viewport und Titel -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme-Generator</title>
+
+    <!-- Verknüpfung zu externen Stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
 </head>
 
 <body>
-    <!-- Navigationsleiste mit verschiedenen Menüpunkten und Dropdown-Optionen -->
 
+  <!-- Navigationsleiste -->
   <nav id="navbar" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <ul>
+      <!-- Startseite -->
       <li><a class="nav-link scrollto active" href="index.html">
-        <img class="spacer" src="images/redditlogo.png" 
-        
-       >
-       Home
+        <img class="spacer" src="images/redditlogo.png" alt="Reddit-Logo">
+        Home
       </a></li>
+      <!-- Über uns -->
       <li><a class="nav-link scrollto" href="about.html">About</a></li>
+      <!-- GIF Finder -->
       <li><a class="nav-link scrollto" href="giffinder.html">GIF Finder</a></li>
 
-      <li class="dropdown"><a href="#"><span>Memes Genres</span> <i class="bi bi-chevron-down"></i></a>
+      <!-- Meme-Genres Dropdown -->
+      <li class="dropdown">
+        <a href="#"><span>Meme-Genres</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
           <li><a href="HistoryMemes.html">History Memes</a></li>
           <li><a href="GymMemes.html">Gym Memes</a></li>
@@ -35,216 +40,206 @@
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav>
-<div> 
-  <div class="text-center headline">Meme-Generator</div>
- 
 
-  <div class="carousel">
+  <!-- Content -->
+  <div> 
+    
+    <div class="text-center headline">Meme-Generator</div>
+  
+    <!-- Bildkarussell -->
+    <div class="carousel">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
         <div class="carousel-inner">
           
+          <!-- Erstes Karussell-Element -->
           <div class="carousel-item carousel-image bg-img-1 active">
-            
-            <!-- <img src="images/background1.jpeg" class="d-block w-100 img-fluid" alt="..."> -->
             <div class="carousel-caption">
-          <div class="carousel-header">
-    </div>
-
-            <div class="info-box">
-              <div class="left-rectangle">
-                <div class="header-content">
-                  <h2>Memes: Die Kunst der Internetkultur 🎨</h2>
-                </div>
-                <div class="rectangle-content">
-                  Willkommen in der faszinierenden Welt der Memes – kurze, humorvolle Bilder und Textkombinationen, die sich rasant im Internet verbreiten. Memes sind nicht nur lustig, sondern auch ein Spiegelbild der aktuellen Popkultur. Von lustigen Tieren bis zu sozialen Kommentaren sind Memes eine einzigartige Form der Online-Unterhaltung, die Gemeinschaften auf der ganzen Welt verbindet.
-                    
-                </div>
-            </div>
-            <div class="middle-rectangle">
-              <div class="header-content">
-                <h2>Der Kreative Raum: Meme-Generator und mehr 🚀</h2>
-              </div>
-              <div class="rectangle-content">
-                Entdecke den kreativen Raum, in dem du selbst zum Schöpfer wirst! Unser Meme-Generator ermöglicht es dir, eigene Memes zu erstellen und der Online-Unterhaltung deinen einzigartigen Stempel aufzudrücken. Lass deiner Fantasie freien Lauf, teile deine Kreationen mit der Welt und erlebe die Freude, wenn deine Memes und GIFs in den sozialen Medien viral werden. Tauche ein in die unendlichen Möglichkeiten des kreativen Ausdrucks im digitalen Zeitalter. 🌐
-              </div>
-            </div>
-            <div class="right-rectangle">
-              <div class="header-content">
-                <h2>GIFs: Bewegte Momente, Endlose Unterhaltung 🎥</h2>
-              </div>
-                <div class="rectangle-content">
-                  GIFs, oder Graphics Interchange Format, sind kurze, wiederholende Animationen, die einen Moment einfangen und in einer Endlosschleife abspielen. Diese visuellen Leckerbissen sind perfekt, um Emotionen, Reaktionen oder lustige Szenen zu teilen. Von popkulturellen Referenzen bis hin zu kreativen Kunstwerken bieten GIFs eine unterhaltsame Möglichkeit, Gefühle und Ideen online zu kommunizieren.
-                </div>
-            </div>
-          </div>
-
-          </div>
-          </div>
-          <div class="carousel-item carousel-image bg-img-2">
-            <!-- <img src="images/background2.jpeg" class="d-block w-100 img-fluid" alt="..."> -->
-            <div class="carousel-caption">
-
+              <div class="carousel-header"></div>
+              <!-- Informationsfelder -->
               <div class="info-box">
-               
-              <div class="info-box2">
-                <div id="info-box2_header"class="header-content">
-                  <h2>Reddit: Die Frontpage des Internets 🌐</h2>
+                <!-- Linkes Feld -->
+                <div class="left-rectangle">
+                  <div class="header-content">
+                    <h2>Memes: Die Kunst der Internetkultur 🎨</h2>
+                  </div>
+                  <div class="rectangle-content">
+                    Willkommen in der faszinierenden Welt der Memes – kurze, humorvolle Bilder und Textkombinationen, die sich rasant im Internet verbreiten. Memes sind nicht nur lustig, sondern auch ein Spiegelbild der aktuellen Popkultur. Von lustigen Tieren bis zu sozialen Kommentaren sind Memes eine einzigartige Form der Online-Unterhaltung, die Gemeinschaften auf der ganzen Welt verbindet.
+                  </div>
                 </div>
-                <div id = "info-box2_content" class="rectangle-content">
-                  Reddit ist eine Social-News- und Community-Plattform, die als "die Frontpage des Internets" bekannt ist. Gegründet im Jahr 2005, ermöglicht Reddit den Benutzern, Inhalte zu teilen, zu bewerten und zu kommentieren. Die Plattform besteht aus Tausenden von "Subreddits", die spezifischen Themen oder Interessen gewidmet sind, von Technologie über Kunst bis hin zu lustigen Memes.
-
-                  Auf Reddit können Benutzer Beiträge erstellen, Links teilen und Diskussionen in den Kommentaren führen. Die Community nutzt ein Abstimmungssystem mit Hoch- und Runterstimmen, um die Sichtbarkeit von Inhalten zu bestimmen. Beliebte Beiträge steigen auf der Startseite von Reddit auf, wo Millionen von Benutzern täglich vorbeischauen.
-                  
-                  Reddit hat einen einzigartigen und vielfältigen Charakter, der es zu einem Ort macht, an dem Menschen mit unterschiedlichen Hintergründen und Interessen zusammenkommen. Es ist bekannt für seinen Humor, seine Expertise und seine Fähigkeit, virale Trends zu setzen.
-                  
-                  Die Plattform hat eine reiche Kultur und eigene Begriffe entwickelt, wie z.B. "AMA" (Ask Me Anything), bei dem Prominente und Fachleute Fragen von der Community beantworten. Mit einer Mischung aus ernsthaften Diskussionen, unterhaltsamen Inhalten und Gemeinschaftsgeist bleibt Reddit ein faszinierender Ort für den Austausch von Ideen und Entdeckungen im weiten Universum des Internets.
-                  
-                  Egal, ob du nach Informationen, Unterhaltung oder einfach nur interessanten Gesprächen suchst, Reddit hat für jeden etwas zu bieten. Tauche ein in die endlosen Subreddits und erlebe selbst, warum Reddit so oft als die "Frontpage des Internets" bezeichnet wird. 🚀                </div>
+                <!-- Mittleres Feld -->
+                <div class="middle-rectangle">
+                  <div class="header-content">
+                    <h2>Der kreative Raum: Meme-Generator und mehr 🚀</h2>
+                  </div>
+                  <div class="rectangle-content">
+                    Entdecke den kreativen Raum, in dem du selbst zum Schöpfer wirst! Unser Meme-Generator ermöglicht es dir, eigene Memes zu erstellen und der Online-Unterhaltung deinen einzigartigen Stempel aufzudrücken. Lass deiner Fantasie freien Lauf, teile deine Kreationen mit der Welt und erlebe die Freude, wenn deine Memes und GIFs in den sozialen Medien viral werden. Tauche ein in die unendlichen Möglichkeiten des kreativen Ausdrucks im digitalen Zeitalter. 🌐
+                  </div>
+                </div>
+                <!-- Rechtes Feld -->
+                <div class="right-rectangle">
+                  <div class="header-content">
+                    <h2>GIFs: Bewegte Momente, endlose Unterhaltung 🎥</h2>
+                  </div>
+                  <div class="rectangle-content">
+                    GIFs, oder Graphics Interchange Format, sind kurze, wiederholende Animationen, die einen Moment einfangen und in einer Endlosschleife abspielen. Diese visuellen Leckerbissen sind perfekt, um Emotionen, Reaktionen oder lustige Szenen zu teilen. Von popkulturellen Referenzen bis hin zu kreativen Kunstwerken bieten GIFs eine unterhaltsame Möglichkeit, Gefühle und Ideen online zu kommunizieren.
+                  </div>
+                </div>
               </div>
-            
+
             </div>
-  
-            </div>
+          </div>
 
+          <!-- Zweites Karussell-Element -->
+          <div class="carousel-item carousel-image bg-img-2">
+            <div class="carousel-caption">
+              <div class="info-box">
+                <!-- Zweites Informationsfeld -->
+                <div class="info-box2">
+                  <div id="info-box2_header"class="header-content">
+                    <h2>Reddit: Die Frontpage des Internets 🌐</h2>
+                  </div>
+                  <div id="info-box2_content" class="rectangle-content">
+                    Reddit ist eine Social-News- und Community-Plattform, die als "die Frontpage des Internets" bekannt ist. Gegründet im Jahr 2005, ermöglicht Reddit den Benutzern, Inhalte zu teilen, zu bewerten und zu kommentieren. Die Plattform besteht aus Tausenden von "Subreddits", die spezifischen Themen oder Interessen gewidmet sind, von Technologie über Kunst bis hin zu lustigen Memes.
 
-
-
+                    Auf Reddit können Benutzer Beiträge erstellen, Links teilen und Diskussionen in den Kommentaren führen. Die Community nutzt ein Abstimmungssystem mit Hoch- und Runterstimmen, um die Sichtbarkeit von Inhalten zu bestimmen. Beliebte Beiträge steigen auf der Startseite von Reddit auf, wo Millionen von Benutzern täglich vorbeischauen.
+                    
+                    Reddit hat einen einzigartigen und vielfältigen Charakter, der es zu einem Ort macht, an dem Menschen mit unterschiedlichen Hintergründen und Interessen zusammenkommen. Es ist bekannt für seinen Humor, seine Expertise und seine Fähigkeit, virale Trends zu setzen.
+                    
+                    Die Plattform hat eine reiche Kultur und eigene Begriffe entwickelt, wie z.B. "AMA" (Ask Me Anything), bei dem Prominente und Fachleute Fragen von der Community beantworten. Mit einer Mischung aus ernsthaften Diskussionen, unterhaltsamen Inhalten und Gemeinschaftsgeist bleibt Reddit ein faszinierender Ort für den Austausch von Ideen und Entdeckungen im weiten Universum des Internets.
+                    
+                    Egal, ob du nach Informationen, Unterhaltung oder einfach nur interessanten Gesprächen suchst, Reddit hat für jeden etwas zu bieten. Tauche ein in die endlosen Subreddits und erlebe selbst, warum Reddit so oft als die "Frontpage des Internets" bezeichnet wird. 🚀
+                  </div>
+                </div>
+              </div>
             </div>
           </div>  
         
         </div>
+        <!-- Navigationsbuttons für das Karussell -->
         <div class="carouselBtns">
-        <button class="carousel-control-prev btnCarousel" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next btnCarousel" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-      </div>
-
-      <div class="content">
-      <div class="container categories text-center mx-auto">
-
-        <div class="categoies_header"> <h1>THE BEST CATEGORIES</h1></div>
-
-        <div class="row mt-2 g-4">
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Humor & Comedy</span> </div>
-                        <div> <img src="images/clown.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Animals & Pets</span></div>
-                        <div> <img src="images/koala.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Gaming & Gamer Memes</span> </div>
-                        <div> <img src="images/joystick.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Movies & TV Shows</span> </div>
-                        <div> <img src="images/video-player.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Politics & Satire</span></div>
-                        <div> <img src="images/politician.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Science & Technology</span> </div>
-                        <div> <img src="images/chronometer.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Everyday Situations & Reactions</span>  </div>
-                        <div> <img src="images/reaction.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-2">
-                    <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="flex-column lh-1 imagename"> <span>Romance & Relationships</span> </div>
-                        <div> <img src="images/love.png" height="100" width="100" /> </div>
-                    </div>
-                </div>
-            </div>
+          <button class="carousel-control-prev btnCarousel" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Vorheriges</span>
+          </button>
+          <button class="carousel-control-next btnCarousel" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Nächstes</span>
+          </button>
         </div>
-        
-    </div>
-  </div>
-
-  
-  <div>
-    <footer class="py-3 my-0 border-top border-dark border-3">
-  
-      <ul class="nav justify-content-center border-bottom pt-3 pb-3 mb-3">
-        <div class="d-flex justify-content-between w-100">
-          <!-- Icon links -->
-          <span class="me-auto">
-            <img class="footer_img" src="images/Trollface.png" alt="">
-            <!-- Hier kannst du das Icon oder Symbol einfügen -->
-          </span>
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="giffinder.html" class="nav-link px-2 text-muted">GIF Finder</a></li>
-        <li class="nav-item"><a href="HistoryMemes.html" class="nav-link px-2 text-muted">History Memes</a></li>
-        <li class="nav-item"><a href="GymMemes.html" class="nav-link px-2 text-muted">Gym Memes</a></li>
-        <li class="nav-item"><a href="RandomMemes.html" class="nav-link px-2 text-muted">Random Memes</a></li>
-        <span class="ms-auto">
-          <img class="footer_img" src="images/Trollface.png" alt="">
-          <!-- Hier kannst du das Icon oder Symbol einfügen -->
-        </span>
       </div>
+
+      <!-- Kategorien -->
+      <div class="content">
+        <div class="container categories text-center mx-auto">
+  
+          <div class="categoies_header"> <h1>THE BEST CATEGORIES</h1></div>
+
+          <!-- Kategorien Karten -->
+  
+          <div class="row mt-2 g-4">
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Humor & Comedy</span> </div>
+                          <div> <img src="images/clown.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Animals & Pets</span></div>
+                          <div> <img src="images/koala.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Gaming & Gamer Memes</span> </div>
+                          <div> <img src="images/joystick.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Movies & TV Shows</span> </div>
+                          <div> <img src="images/video-player.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Politics & Satire</span></div>
+                          <div> <img src="images/politician.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Science & Technology</span> </div>
+                          <div> <img src="images/chronometer.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Everyday Situations & Reactions</span>  </div>
+                          <div> <img src="images/reaction.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card p-2">
+                      <div class="d-flex justify-content-between align-items-center p-2">
+                          <div class="flex-column lh-1 imagename"> <span>Romance & Relationships</span> </div>
+                          <div> <img src="images/love.png" height="100" width="100" /> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  
+
+    <!-- Footer -->
+    <div>
+      <footer class="py-3 my-0 border-top border-dark border-3">
+        <!-- Navigationsleiste im Footer -->
+        <ul class="nav justify-content-center border-bottom pt-3 pb-3 mb-3">
+          <div class="d-flex justify-content-between w-100">
+            <!-- Icon-Links -->
+            <span class="me-auto">
+              <img class="footer_img" src="images/Trollface.png" alt="">
+            </span>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">Über uns</a></li>
+            <li class="nav-item"><a href="giffinder.html" class="nav-link px-2 text-muted">GIF Finder</a></li>
+            <li class="nav-item"><a href="HistoryMemes.html" class="nav-link px-2 text-muted">Geschichtsmemes</a></li>
+            <li class="nav-item"><a href="GymMemes.html" class="nav-link px-2 text-muted">Fitnessmeme</a></li>
+            <li class="nav-item"><a href="RandomMemes.html" class="nav-link px-2 text-muted">Zufallsmeme</a></li>
+            <span class="ms-auto">
+              <img class="footer_img" src="images/Trollface.png" alt="">
+            </span>
+          </div>
           <!-- Text in der Mitte -->
           <p class="text-center text-muted">© 2023 MEMES, Inc</p>
           <!-- Icon rechts -->
+        </ul>
+      </footer>
+    </div>
 
-       
-      </ul>
-  
-    </footer>
-  </div>
-  
-  
-  
-  
-  
-   
-      
+    <!-- JavaScript-Dateien -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-      <script src="main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
-      
-</body>
+  </body>
 
 </html>
+
+

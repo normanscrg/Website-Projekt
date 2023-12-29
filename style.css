@@ -151,6 +151,8 @@ h1 {
   line-height: 2;
   font-size: 16px;
   overflow: hidden; /* Hinzugefügtes CSS-Attribut */
+  max-height: 60vh; /* Maximal zulässige Höhe */
+  overflow-y: auto; /* Fügt die Scrollleiste hinzu, wenn nötig */
 }
 
 /* CSS-Regeln für den Abschnitt mit der Klasse info-box */
@@ -158,6 +160,11 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow-x: auto; /* Fügt die Scrollleiste hinzu, wenn nötig */
+}
+
+#about_content {
+  padding-top: 50px;
 }
 
 /* CSS-Regeln für verschiedene Rechtecke und den Abschnitt info-box2 */
@@ -174,7 +181,10 @@ h1 {
   margin: 10px;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* Hinzugefügtes CSS-Attribut */
 }
+
+
 
 /* CSS-Regeln für h2 innerhalb des Abschnitts info-box2 */
 #info-box2_header h2 {
@@ -217,10 +227,13 @@ h1 {
 
 /* CSS-Regeln für den Abschnitt mit der Klasse categories */
 .categories {
-  height: 500px;
+  height: auto;
   color: white;
+  padding: 50px;
 }
-
+.categoies_header {
+  padding-top: 20px;
+}
 /* CSS-Regeln für die Karten */
 .card {
   height: 130px;
