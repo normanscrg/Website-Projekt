@@ -1,33 +1,31 @@
-<!-- HTML Document with Comments -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Metadata for character set, compatibility, viewport, and title -->
+    <!-- Metadaten für Zeichensatz, Kompatibilität, Viewport und Titel -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme-Generator</title>
     <!-- Favicon einbinden -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Link to external stylesheets -->
+    <!-- Verknüpfung zu externen Stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigationsleiste -->
     <nav id="navbar" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <ul>
-            <!-- Navigation Items -->
+            <!-- Navigationspunkte -->
             <li><a class="nav-link scrollto" href="index.html">
                 <img class="spacer" src="images/redditlogo.png" alt="Reddit-Logo">
                 Home
             </a></li>
             <li><a class="nav-link scrollto active" href="about.html">About</a></li>
             <li><a class="nav-link scrollto" href="giffinder.html">GIF Finder</a></li>
-            <!-- Dropdown for Meme Genres -->
+            <!-- Dropdown für Meme-Genres -->
             <li class="dropdown">
                 <a href="#"><span>Memes Genres</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
@@ -40,19 +38,19 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Content -->
     <body>
         <div class="about">
             <div class="text-center headline"> About</div>
-            <!-- Info Boxes for Reddit API and GIPHY API -->
+            <!-- Info Box für Reddit API und GIPHY API -->
             <div id="about_content" class="info-box">
-                <!-- Left Rectangle for Reddit API -->
+                <!-- Linkes Rechteck für Reddit API -->
                 <div id="reddit_api" class="left-rectangle">
                     <div class="header-content">
                         <h2>Reddit API</h2>
                     </div>
                     <div id="reddit_api_content" class="rectangle-content">
-                        <!-- Reddit API Information -->
+                        <!-- Reddit API Informationen -->
                         🎉 Diverse Meme-Kategorien: Von Humor & Comedy bis zu Gaming & Gamer Memes – die API bietet eine breite Palette von Meme-Kategorien.
 
                         🔎 Leistungsstarke Suche: Durchsucht die riesige Sammlung nach Schlagworten, Themen oder Emotionen.
@@ -66,13 +64,13 @@
 
                     </div>
                 </div>
-                <!-- Right Rectangle for GIPHY API -->
+                <!-- Rechtes Rechteck für GIPHY API -->
                 <div id="giphy_api" class="right-rectangle">
                     <div class="header-content">
                         <h2>GIPHY API</h2>
                     </div>
                     <div id="giphy_api_content" class="rectangle-content">
-                        <!-- GIPHY API Information -->
+                        <!-- GIPHY API Informationen -->
                         Die Giphy API ermöglicht Entwicklern den Zugriff auf eine riesige Sammlung von animierten GIFs für verschiedene Anwendungen.
 
                         Funktionen und Möglichkeiten:
@@ -95,33 +93,29 @@
         <!-- Footer -->
         <div>
             <footer class="py-3 my-0 border-top border-dark border-3">
-                <!-- Navigation Bar in Footer -->
+                <!-- Navigationsleiste im Footer -->
                 <ul class="nav justify-content-center border-bottom pt-3 pb-3 mb-3">
                     <div class="d-flex justify-content-between w-100">
-                        <!-- Icon Left -->
                         <span class="me-auto">
                             <img class="footer_img" src="images/Trollface.png" alt="">
-                            <!-- Insert your icon or symbol here -->
                         </span>
-                        <!-- Navigation Links -->
+                        <!-- Navigationslinks -->
                         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
                         <li class="nav-item"><a href="giffinder.html" class="nav-link px-2 text-muted">GIF Finder</a></li>
                         <li class="nav-item"><a href="HistoryMemes.html" class="nav-link px-2 text-muted">History Memes</a></li>
                         <li class="nav-item"><a href="GymMemes.html" class="nav-link px-2 text-muted">Gym Memes</a></li>
                         <li class="nav-item"><a href="RandomMemes.html" class="nav-link px-2 text-muted">Random Memes</a></li>
-                        <!-- Icon Right -->
                         <span class="ms-auto">
                             <img class="footer_img" src="images/Trollface.png" alt="">
-                            <!-- Insert your icon or symbol here -->
                         </span>
                     </div>
-                    <!-- Text in the Middle -->
                     <p class="text-center text-muted">© 2023 MEMES, Inc</p>
-                    <!-- Icon Right -->
                 </ul>
             </footer>
         </div>
+            <!-- JavaScript- und Bootstrap-Skripte -->
+
         <script src="main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
