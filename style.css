@@ -196,7 +196,7 @@ h1 {
   line-height: 1.5;
 }
 
-/* Media Query für Bildschirme mit einer Breite von 768px oder kleiner */
+/* Media Query für Bildschirme mit einer Breite von 768px oder kleiner / Smartphone Ansicht */
 @media (max-width: 768px) {
   .info-box {
     flex-direction: column;
@@ -213,7 +213,7 @@ h1 {
     height: 40vh;
   }
   .carousel-item {
-    height: 200vh; /* Passe die Höhe nach Bedarf an */
+    height: 200vh; 
   }
 
 }
@@ -309,17 +309,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Position auf relative setzen */
+  position: relative; 
 }
 
 /* CSS-Regeln für Bilder innerhalb des Abschnitts pic */
 .pic img {
-  margin-top: 20px;
+  padding:  20px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   height: 500px;
   width: 500px;
+
 }
 
 /* CSS-Regeln für die Bildunterschrift innerhalb des Abschnitts pic */
@@ -388,12 +389,6 @@ h1 {
   color: white;
 }
 
-/* CSS-Regeln für den Footer */
-footer {
-  width: 100%;
-  padding-left: 300px;
-  padding-right: 300PX;
-}
 
 /* CSS-Regeln für den Abstand zwischen den Elementen */
 .spacer {
@@ -520,14 +515,16 @@ footer {
 }
 
 
-
-footer{
+/* CSS-Regeln für den Footer */
+footer {
   border-top: #000000;
   border-width: 2px;
   background-color: #ef6503;
   padding: 0;
 
 }
+
+/* CSS-Regeln für die Footer-Bilder */
 .footer_img {
 height: 100px;
 width: 100px;
